@@ -1,6 +1,17 @@
 var targetDate = new Date("2024-04-06T21:00:00");
-var audio = document.getElementById("audio");
+let audio = new Audio("Vivaldi Variation.mp3");
 audio.volume = 0.1;
+
+function playAudio() {
+    audio.play()
+        .catch(error => {
+            // Handle any errors that occur during playback
+            console.error('Playback failed:', error.message);
+        });
+}
+
+document.addEventListener('touchstart', playAudio);
+document.addEventListener('click', playAudio);
 
 var countdown = setInterval(function() {
     var current = new Date().getTime();
@@ -19,3 +30,4 @@ var countdown = setInterval(function() {
         timer.innerHTML = "FELIZ CUMPLEAÑOS!"
     }
 }, 1000)
+
