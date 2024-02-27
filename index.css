@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 .container {
     justify-content: center;
@@ -26,7 +27,18 @@
     background-color: #f2d583A8;
     border-radius: 20px;
 }
-
+.contador {
+    position: absolute;
+    z-index: 1;
+    left: 18%;
+    top: 5%;
+    font-size: 38px;
+    background-color: #f2d583A8;
+    width: 60%;
+    height: 15%;
+    border-radius: 10px;
+    text-align: center;
+}
 .confirmacion {
     position: relative;
 }
@@ -47,6 +59,23 @@
     border-radius: 20px;
 }
 
+
+.faltan {
+    margin: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #254266;
+}
+
+#countdown {
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: #254266;
+}
+
+
 @media screen and (max-width: 425px) {
     .foto {
         max-width: 425px;
@@ -66,5 +95,15 @@
         background-color: #f2d583A8;
         width: 30%;
         border-radius: 20px;
+    }
+
+    .faltan {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    #countdown {
+        font-size: 17px;
+        margin-top: 5px;
     }
 }
