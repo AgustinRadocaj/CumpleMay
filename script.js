@@ -12,6 +12,7 @@ function playAudio() {
 
 document.addEventListener('touchstart', playAudio);
 document.addEventListener('click', playAudio);
+document.addEventListener('scroll', playAudio);
 
 var countdown = setInterval(function() {
     var current = new Date().getTime();
