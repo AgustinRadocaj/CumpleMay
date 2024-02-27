@@ -1,6 +1,6 @@
 var targetDate = new Date("2024-04-06T21:00:00");
 let audio = new Audio("Vivaldi Variation.mp3");
-audio.volume = 0.1;
+audio.volume = 0.3;
 
 function playAudio() {
     audio.play()
