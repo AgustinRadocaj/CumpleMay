@@ -1,4 +1,6 @@
 var targetDate = new Date("2024-04-06T21:00:00");
+var audio = document.getElementById("audio");
+audio.volume = 0.1;
 
 var countdown = setInterval(function() {
     var current = new Date().getTime();
